@@ -1,0 +1,95 @@
+h1, h2 {
+  text-align: center;
+  font-family: 'Comic Sans MS', 'Impact', serif;
+  color: white;
+}
+
+div.cell {
+  width: 100px;
+  height: 100px;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  background: #ccc;
+  float: left;
+  box-sizing: border-box;
+}
+
+.unclicked:hover {
+  background-color: magenta;
+  cursor: crosshair;
+}
+
+div.row {
+  height: 100px;
+  width: 300px;
+  margin: 0;
+}
+
+div.game {
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  border-left: 5px solid black;
+  border-top: 5px solid black;
+}
+
+div.clicked {
+  background: #eee;
+  font-size: 72px;
+  font-family: 'Comic Sans MS';
+  text-align: center;
+}
+
+.x:before {
+  content: "X";
+  color: blue;
+}
+
+.o:before {
+  content: "O";
+  color: red;
+}
+
+img {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+input {
+  display: block;
+  position: fixed;
+  border: 0;
+  top: 20px;
+  left: 20px;
+  width: 400px;
+  height: 400px;
+  font-size: 96px;
+  font-family: 'Comic Sans MS';
+  color: blue;
+  border-radius: 25px;
+  word-wrap: break-word;
+  background-image: url("http://www.zingerbug.com/Backgrounds/background_images/red_flame_fractal_background_seamless.jpg");
+}
+
+input:hover {
+  color: orange;
+}
+
+body {
+  background-image: url("http://media.giphy.com/media/zZaL6PvpkKnUA/giphy.gif");
+  background-size: cover;
+}
+
+.game {
+  white-space: nowrap;
+}
+
+.end-message {
+  color: yellow;
+  font-family: 'Comic Sans MS';
+  font-size: 64px;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  text-decoration: blink;
+}
